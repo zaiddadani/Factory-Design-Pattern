@@ -21,12 +21,12 @@ The Factory Design Pattern falls under the category of creational design pattern
 ## Simple Example Implementation To Understand Factory Design Pattern
 
 ```java
-// Product interface
+
 public interface Logger {
     void log(String message);
 }
 
-// Concrete Products
+
 public class FileLogger implements Logger {
     @Override
     public void log(String message) {
@@ -41,12 +41,12 @@ public class ConsoleLogger implements Logger {
     }
 }
 
-// Factory interface
+
 public interface LoggerFactory {
     Logger createLogger();
 }
 
-// Concrete Factories
+
 public class FileLoggerFactory implements LoggerFactory {
     @Override
     public Logger createLogger() {
@@ -61,7 +61,7 @@ public class ConsoleLoggerFactory implements LoggerFactory {
     }
 }
 
-// Usage
+
 public class LoggerFactoryExample {
     public static void main(String[] args) {
         LoggerFactory fileLoggerFactory = new FileLoggerFactory();

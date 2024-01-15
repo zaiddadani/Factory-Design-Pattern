@@ -1,3 +1,4 @@
+package LoggerFactoryExample;
 
 public class FileLoggerFactory implements LoggerFactory {
     @Override
